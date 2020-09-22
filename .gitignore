@@ -1,0 +1,12 @@
+!boticelli-backend/wp-content/
+
+boticelli-backend/wp-content/*
+  !boticelli-backend/wp-content/plugins/
+  !boticelli-backend/wp-content/themes/
+
+boticelli-backend/node_modules/
+boticelli-frontend/node_modules/
+
+*.log
+*.sql
+*.sqlite
