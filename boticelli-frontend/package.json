@@ -5,6 +5,7 @@
   "author": "Alex Crocker <hello@crock.dev>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.13.51",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-google-adsense": "^1.1.3",

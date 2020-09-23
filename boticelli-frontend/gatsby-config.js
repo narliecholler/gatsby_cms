@@ -34,18 +34,32 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // your wordpress source
-        baseUrl: `cms.botwrangler.me`,
-        protocol: `https`,
+        baseUrl: `localhost/wordpress/`,
+        restApiRoutePrefix: "wp-json",
+        protocol: `http`,
         // is it hosted on wordpress.com, or self-hosted?
         hostingWPCOM: false,
         // does your site use the Advanced Custom Fields Plugin?
         useACF: true,
+        verboseOutput: true,
         // auth: {
         //   htaccess_user: process.env.WP_USER,
         //   htaccess_pass: process.env.WP_PASS,
         //   htaccess_sendImmediately: false,
         // },
-        excludedRoutes: []
+        excludedRoutes: [],
+        includedRoutes: [
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/categories",
+          "**/tags",
+          "**/taxonomies",
+          "**/users",
+        ],
+        normalizer: function ({ entities }) {
+          return entities
+        },
       }
     },
     {
