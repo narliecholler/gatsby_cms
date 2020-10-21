@@ -1,12 +1,24 @@
-!boticelli-backend/wp-content/
+ ignore everything in the root except the "wp-content" directory.
+!wordpress/wp-content/
 
-boticelli-backend/wp-content/*
-  !boticelli-backend/wp-content/plugins/
-  !boticelli-backend/wp-content/themes/
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wordpress/wp-content/*
+!wordpress/wp-content/mu-plugins/
+!wordpress/wp-content/plugins/
+!wordpress/wp-content/themes/
 
-boticelli-backend/node_modules/
-boticelli-frontend/node_modules/
+# ignore these plugins
+wp-content/plugins/hello.php
 
-*.log
-*.sql
-*.sqlite
+# ignore specific themes
+wp-content/themes/*
+
+
+gatsby/node_modules/
+wordpress/node_modules/
+
+
+**/*.log
+**/*.sql
+**/*.sqlite
