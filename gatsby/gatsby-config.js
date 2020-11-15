@@ -22,7 +22,7 @@ module.exports = {
       options: {
         url:
           process.env.WPGRAPHQL_URL ||
-          `http://localhost/wordpress/graphql`,
+          `http://localhost/gatsby_cms/wordpress/graphql`,
         verbose: true,
         develop: {
           hardCacheMediaFiles: true,
