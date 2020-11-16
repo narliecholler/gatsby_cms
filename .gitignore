@@ -3,3 +3,7 @@
 **/*.sqlite
 node_modules/
 .DS_store
+.cache
+WordPress/
+package-lock.json
+yarn.lock
