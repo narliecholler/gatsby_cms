@@ -6,7 +6,6 @@ import MenuItem from '../MenuItem'
 const Menu = ({
   data,
 }) => {
-
   console.log('data', data)
   return (
     <MenuContainer>
@@ -20,7 +19,7 @@ const Menu = ({
 }
 
 Menu.propTypes = {
-  item: PropTypes.object,
+  data: PropTypes.array,
 }
 
 export default Menu
