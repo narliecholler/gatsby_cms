@@ -66,7 +66,6 @@ query PREVIEW_QUERY($id: ID!) {
       }
     }
     template {
-      templateFile
       templateName
       __typename
     }

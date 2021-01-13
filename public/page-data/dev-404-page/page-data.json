@@ -1,1 +1,1 @@
-{"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","result":{"data":{"allSitePage":{"nodes":[{"path":"/home/"},{"path":"/sample-page/"},{"path":"/hello-world/"},{"path":"/blog/"},{"path":"/404/"},{"path":"/404.html"},{"path":"/about/"},{"path":"/repertoire/"},{"path":"/book/"},{"path":"/contact/"}]}},"pageContext":{}},"staticQueryHashes":[]}
+{"componentChunkName":"component---cache-dev-404-page-js","path":"/dev-404-page/","result":{"data":{"allSitePage":{"nodes":[{"path":"/404/"},{"path":"/404.html"}]}},"pageContext":{}},"staticQueryHashes":[]}
