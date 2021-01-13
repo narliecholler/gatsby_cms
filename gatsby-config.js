@@ -66,16 +66,5 @@ module.exports = {
     },
     `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto Condensed`,
-            variants: [`400`, `500`, `700`]
-          }
-        ]
-      }
-    }
   ],
 }
