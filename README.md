@@ -1,18 +1,15 @@
-# gatsby-source-wordpress V4 (alpha) starter
+### Gatsby Headless CMS (WordPress)
 
-This starter uses an early alpha version of the upcoming `gatsby-source-wordpress@v4`. You can find rough documentation for that package [here](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental).
+-- currenntly working off DEV branch -- 
 
-## Installation
+# What is this repo?
 
-Follow along at the [alpha docs installation guide](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/getting-started.md#quick-start).
+This project is about creating a website for a family member, someone who plays a musical instrument and has a duet called 'The Boticelli Duet.' I decided to offer my help
+and create a website for her, seeing it as a good opportunity to mess around with Gatsby and headless CMS.
 
-## Known issues
+# What is the tech stack and other tech used?
 
-- This starter doesn't build it's Styled components properly
-- The paginated blog on the homepage isn't offsetting posts properly
-- Probably other things :p
-
-## Links
-
-- [gatsby-source-wordpress-experimental](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental)
-- [wpgatsby](https://github.com/gatsbyjs/wp-gatsby)
+1. Gatsby,
+2. Wordpress as the backend (combined with Advanced Custom Fields),
+3. Netlify to host Frontend, using this repo and triggering builds from master,
+4. Digital Ocean Droplet to host the WordPress instance.

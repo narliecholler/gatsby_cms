@@ -22,8 +22,7 @@ module.exports = {
       options: {
         useACF: true,
         url:
-          process.env.WPGRAPHQL_URL ||
-          `http://cms.boticelli-duet.com/graphql`,
+          process.env.WPGRAPHQL_URL
       },
     },
     `gatsby-plugin-image`,
