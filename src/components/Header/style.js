@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
-  width: 100%;
+  width: 80%;
+  margin: auto;
   height: 120px;
   font-family: 'Roboto Condensed';
   display: flex;

@@ -90,8 +90,9 @@ const MenuWrapper = styled.div`
 `
 
 const MenuLink = styled(Link)`
+  color: #000;
   &.active {
-    color: ${props => props.theme.c};
+    color: ${props => props.theme.color.secondary};
   }
 `
 

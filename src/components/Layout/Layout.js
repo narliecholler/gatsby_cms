@@ -12,7 +12,9 @@ const Layout = ({
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header />
-      {children}
+      <main id='main'>
+        {children}
+      </main>
       <Footer />
     </ThemeProvider>
   </div>

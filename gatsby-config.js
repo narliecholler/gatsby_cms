@@ -20,12 +20,14 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+        useACF: true,
         url:
           process.env.WPGRAPHQL_URL ||
           `http://cms.boticelli-duet.com/graphql`,
       },
     },
-    `gatsby-plugin-chakra-ui`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-react-svg",
@@ -41,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ['Roboto Condensed'],
+        fonts: ['Roboto Condensed\:300,400,500,700'],
       }
     }
   ],

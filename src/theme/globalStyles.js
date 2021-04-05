@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     color: #000;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
   }
 
   body {
@@ -25,14 +26,33 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 0;
     background-color: ${({ theme }) => theme.color.primary};
 
-    #layout {
+    h1, h2, h3, h4, h5, h6 {
+      font-family: ${({ theme }) => theme.font.primary.family};
+      color: ${({ theme }) => theme.color.black};
+    }
+
+    p {
+      font-weight: 300;
+      font-family: ${({ theme }) => theme.font.primary.family};
+      color: ${({ theme }) => theme.color.black};
+      line-height: 25px;
+      font-size: 1rem;
+    }
+
+    #main {
       width: 80%;
       margin: auto!important;
     }
-  }
 
-  h1, h2, h3, h4, h5, h6, p {
-    font-family: ${({ theme }) => theme.font.primary.family};
+
+
+
+    // mobile styles 
+    @media only screen and (max-width: 1024px) {
+      p {
+        font-size: 14px;
+      }
+    }
   }
 `
 

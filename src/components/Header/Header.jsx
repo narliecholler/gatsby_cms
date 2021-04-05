@@ -26,7 +26,6 @@ const Header = () => {
   )
 
   const menuItemsObj = data.allWpMenu.edges[0].node.menuItems.nodes
-  console.log(data.allWpMenu.edges[0].node)
 
   return (
     <HeaderContainer>

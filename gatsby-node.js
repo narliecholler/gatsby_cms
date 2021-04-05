@@ -6,7 +6,8 @@ exports.createPages = async ({
   reporter
 }) => {
   const { createPage } = actions
-  const PageTemplate = path.resolve('./src/templates/page.js')
+  // const PageTemplate = path.resolve('./src/templates/page.js')
+  let pageTemplate
 
   const result =
     await graphql(`
@@ -26,10 +27,29 @@ exports.createPages = async ({
 
   const Pages = result.data.allWpPage.edges
   Pages.forEach(page => {
-    const slugPage = page.node.slug === 'home' ? '/' : `/${page.node.slug}`
+    const slug = page.node.slug === 'home' ? '/' : `/${page.node.slug}`
+
+    switch (slug) {
+      case '/':
+        pageTemplate = path.resolve('./src/templates/Home.js')
+        break
+      case '/about':
+        pageTemplate = path.resolve('./src/templates/About.js')
+        break
+      case '/repertoire':
+        pageTemplate = path.resolve('./src/templates/Repertoire.js')
+        break
+      case '/gallery':
+        pageTemplate = path.resolve('./src/templates/Gallery.js')
+        break
+      case '/contact':
+        pageTemplate = path.resolve('./src/templates/Contact.js')
+        break
+    }
+
     createPage({
-      path: slugPage,
-      component: PageTemplate,
+      path: slug,
+      component: pageTemplate,
       context: {
         id: page.node.id
       }
