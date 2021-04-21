@@ -8,7 +8,6 @@ const Wrapper = styled.div`
 
   p {
     width: 60%;
-    padding-top: 25px;
     padding-bottom: 25px;
     margin: auto;
     text-align: center;

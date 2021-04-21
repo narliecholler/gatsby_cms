@@ -1,6 +1,6 @@
 ### Gatsby Headless CMS (WordPress)
 
--- currenntly working off DEV branch -- 
+-- currently working off DEV branch -- 
 
 # What is this repo?
 

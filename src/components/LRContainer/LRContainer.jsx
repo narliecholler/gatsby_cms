@@ -12,7 +12,7 @@ const LRContainer = ({
 }) => {
 
   const data = useStaticQuery(graphql`
-    query LRContainerQuery {
+    query {
       allWpPage(filter: {slug: {eq: "home"}}) {
         edges {
           node {

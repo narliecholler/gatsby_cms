@@ -36,7 +36,17 @@ const Container = styled.div`
   @media only screen and (max-width: 767px) {
     flex-direction: column;
     .LRContent, .LRImage {
+      h2 {
+        text-align: center;
+      }
+      p {
+        width: 100%;
+      }
+      #repBtn {
+        text-align: center;
+      }
       width: 100%;
+      text-align:center;
     }
     .LRContent {
       #repBtn {

@@ -37,13 +37,6 @@ const HireContainer = ({
                     }
                   }
                 }
-                venuefour {
-                  localFile {
-                    childImageSharp {
-                      gatsbyImageData(layout: CONSTRAINED)
-                    }
-                  }
-                }
                 heading
                 text
               }

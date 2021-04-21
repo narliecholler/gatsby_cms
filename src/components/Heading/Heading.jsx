@@ -21,7 +21,7 @@ const Heading = ({
       return (
         <>
           <HeadingOne className={className} align={align}>{text}</HeadingOne>
-          { underline && (<Underline color={underlineColor} class="underline"></Underline>)}
+          { underline && (<Underline color={underlineColor} class="underline" />)}
         </>
       )
     case 'h2':
