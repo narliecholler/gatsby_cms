@@ -32,7 +32,7 @@ const ContactForm = () => {
   })
 
   return (
-    <Form action='/contact' name='boticelli-contact' method='POST' netlify-honeypot="bot-field" netlify enctype='application/x-www-form-urlencoded'>
+    <Form action='/contact/' name='boticelli-contact' method='POST' netlify-honeypot="bot-field" netlify enctype='application/x-www-form-urlencoded'>
       <input type="hidden" name="form-name" value="boticelli-contact" />
       <div id='nameRow' className="formRow">
         <FormField>
