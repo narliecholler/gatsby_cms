@@ -41,7 +41,7 @@ const HeroImage = () => {
   return (
     <HeroContainer>
       <div id='heroImg'>
-        <GatsbyImage image={image} alt='' />
+        <GatsbyImage image={image} alt='hero image' />
       </div>
       <HeroBox heading={heading} text={text} secondText={secondText} />
     </HeroContainer>

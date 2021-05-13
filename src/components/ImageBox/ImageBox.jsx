@@ -11,7 +11,7 @@ const ImageBox = ({
     <ImageBoxContainer>
       <span className="venuOverlay"></span>
       <OverlayHeading className="boxHeading" text='Weddings' heading='h3' />
-      <GatsbyImage image={image} />
+      <GatsbyImage image={image} alt='venue image' />
     </ImageBoxContainer>
   )
 }

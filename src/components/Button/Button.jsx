@@ -3,6 +3,7 @@ import { BtnContainer, Btn } from './style'
 
 const Button = ({
   text,
+  type,
   link,
   backgroundColor,
   textColor,
@@ -13,9 +14,11 @@ const Button = ({
   return (
     <BtnContainer id={id} align={align}>
       <Btn
+        data-testid={id}
         background={backgroundColor}
         color={textColor}
         to={link}
+        type={type}
       >
         {text}
       </Btn>

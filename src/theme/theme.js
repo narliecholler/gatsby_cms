@@ -11,6 +11,9 @@ export const theme = {
       family: 'Roboto Condensed',
       weight: 500
     },
+    cursive: {
+      family: 'White Angelica'
+    },
     h1: '35px',
     h2: '30px',
     h3: '28px',

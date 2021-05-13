@@ -1,0 +1,367 @@
+{
+  "music": [
+    {
+      "title": "Baroque/Classical",
+      "list": [
+        {
+          "artist": "Albeniz",
+          "songs": [
+            "Asturias",
+            "Cuba",
+            "Sevilla",
+            "Tango"
+          ]
+        },
+        {
+          "artist": "Arne",
+          "songs": [
+            "Rule Britania"
+          ]
+        },
+        {
+          "artist": "Bach",
+          "songs": [
+            "Air on a G string",
+            "Arioso",
+            "Minuet",
+            "Two Chorales",
+            "Wachet Auf",
+            "Sheep may safely graze"
+          ]
+        },
+        {
+          "artist": "Beethoven",
+          "songs": [
+            "Shepherd's Hymn"
+          ]
+        },
+        {
+          "artist": "Bizet",
+          "songs": [
+            "Pearl Fishers"
+          ]
+        },
+        {
+          "artist": "Brahms",
+          "songs": [
+            "Hungarian Dance no.5",
+            "Hunting Song"
+          ]
+        },
+        {
+          "artist": "Borodin",
+          "songs": [
+            "Nocturne"
+          ]
+        },
+        {
+          "artist": "Caccini",
+          "songs": [
+            "Ave Maria"
+          ]
+        },
+        {
+          "artist": "Couperin",
+          "songs": [
+            "Air for Two Viols"
+          ]
+        },
+        {
+          "artist": "Delibes",
+          "songs": [
+            "Flower Duet"
+          ]
+        },
+        {
+          "artist": "Di Capua",
+          "songs": [
+            "O sole mio"
+          ]
+        },
+        {
+          "artist": "Elgar",
+          "songs": [
+            "Where corals lie",
+            "Chanson de matin",
+            "Salut d'amor"
+          ]
+        },
+        {
+          "artist": "Faure",
+          "songs": [
+            "Pavane",
+            "Sicilienne",
+            "Pie Jesu"
+          ]
+        },
+        {
+          "artist": "Gluck",
+          "songs": [
+            "Che Faro Senza Euridice"
+          ]
+        },
+        {
+          "artist": "Grieg",
+          "songs": [
+            "Morning"
+          ]
+        },
+        {
+          "artist": "Handel",
+          "songs": [
+            "Arrivalof the Queen of Shelba",
+            "Hornpipe",
+            "Largo",
+            "March",
+            "Sonato op.2"
+          ]
+        },
+        {
+          "artist": "Jenkins",
+          "songs": [
+            "Palladio"
+          ]
+        },
+        {
+          "artist": "Lee",
+          "songs": [
+            "3 Sonatas"
+          ]
+        },
+        {
+          "artist": "Lehar",
+          "songs": [
+            "Gold and silver waltz"
+          ]
+        },
+        {
+          "artist": "Masacaglia",
+          "songs": [
+            "Intermezzo"
+          ]
+        },
+        {
+          "artist": "Mozart",
+          "songs": [
+            "Adagio from clarinet concerto",
+            "Andante and Rondo (sonata 292)",
+            "Marriage of Figaro",
+            "Rondo"
+          ]
+        },
+        {
+          "artist": "Mozart",
+          "songs": [
+            "Adagio from clarinet concerto",
+            "Andante and Rondo (sonata 292)",
+            "Marriage of Figaro",
+            "Rondo"
+          ]
+        },
+        {
+          "artist": "Mondelssohn",
+          "songs": [
+            "Wedding March, Nocture (Midsummer Nights Dream)"
+          ]
+        },
+        {
+          "artist": "Pachelbel",
+          "songs": [
+            "Canon in d"
+          ]
+        },
+        {
+          "artist": "Prokofiev",
+          "songs": [
+            "Marche (Love for three oranges)",
+            "Phantasm"
+          ]
+        },
+        {
+          "artist": "Purcell",
+          "songs": [
+            "Rondo"
+          ]
+        },
+        {
+          "artist": "Saint-Saens",
+          "songs": [
+            "The Swan"
+          ]
+        },
+        {
+          "artist": "Strauss",
+          "songs": [
+            "Tales from the Vienna Woods"
+          ]
+        },
+        {
+          "artist": "Tchaikovsky",
+          "songs": [
+            "Nutcracker Miniatures",
+            "Swan Lake"
+          ]
+        },
+        {
+          "artist": "Telemann",
+          "songs": [
+            "Six Canonic Sonatas"
+          ]
+        },
+        {
+          "artist": "Trad",
+          "songs": [
+            "Greensleeves",
+            "Londonderry air"
+          ]
+        },
+        {
+          "artist": "Vivaldi",
+          "songs": [
+            "Concerto for 2 cellos",
+            "Movements from the 4 seasons"
+          ]
+        },
+        {
+          "artist": "Vivant",
+          "songs": [
+            "Habanera"
+          ]
+        },
+        {
+          "artist": "Wagner",
+          "songs": [
+            "Bridal March"
+          ]
+        },
+        {
+          "artist": "Mozart",
+          "songs": [
+            "Adagio from clarinet concerto",
+            "Andante and Rondo (sonata 292)",
+            "Marriage of Figaro",
+            "Rondo"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Shows/Films",
+      "list": [
+        {
+          "artist": "Films",
+          "songs": [
+            "All I ask of you (Phantom of the opera)",
+            "Bear Necessities (jungle book)",
+            "Brideshead revisited (film)",
+            "Close every door (Joseph and technicolor raincoat)",
+            "Dr Zhivago (film)",
+            "He is a pirate (Pirates of the Caribbean)",
+            "Memory (cats)",
+            "A Million Dreams (The Greatest Showman)",
+            "Music of the night (Phantom of the opera)",
+            "I could have danced all night (my fair lady)",
+            "I don't know how to love him (chess)",
+            "I dreamed a dream (les miserables)",
+            "I know him so well (Jungle book)",
+            "I wanna be like you (jungle book)",
+            "One hand, one heart (Fiddler on the roof)",
+            "Schindlers list (film)",
+            "Somewhere over the raindow (wizard of oz)",
+            "Speak softly, love (The godfather)",
+            "Sunrise, sunset (fiddler on the roof)"
+          ]
+        },
+        {
+          "artist": "TV Shows",
+          "songs": [
+            "Cheers (TV show)",
+            "Maria (west side story)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Contemporary",
+      "list": [
+        {
+          "artist": "",
+          "songs": [
+            "All you need is love",
+            "Angels",
+            "Ashokan Farewell",
+            "As time goes by",
+            "Billy Malone",
+            "Blue moon",
+            "Caribbean Blue",
+            "Chasing cars",
+            "Don't stop believing",
+            "Hallelujah (Cohen)",
+            "Have I told you lately",
+            "Here comes the sun",
+            "La Cucaracha",
+            "La Cumpasita",
+            "Lady be Good",
+            "Lady Madonna",
+            "Cruella de vil",
+            "Eleanor Rigby",
+            "The entertainer",
+            "Fly me to the moon",
+            "Fragile",
+            "Make you feel my love",
+            "Making whoopee",
+            "Misirlou",
+            "Nothing else matters",
+            "One day like this",
+            "Picnic Piece",
+            "Pretty Woman",
+            "Smells like teen spirit",
+            "Smoke gets in your eyes",
+            "strawberry fields",
+            "Thousand years",
+            "Total eclipse of the heart",
+            "Viva la Vida",
+            "Waterloo sunset",
+            "When I'm sixty four",
+            "Where the streets have no name",
+            "With or without you",
+            "A whiter shade of pale",
+            "Wonderful world (Armstrong)",
+            "Wycherley Blues"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fiddler Cello",
+      "list": [
+        {
+          "artist": "",
+          "songs": [
+            "Ashokan Farwell",
+            "Carolan's Air",
+            "Drowsie Maggie",
+            "Makin' Whoopee",
+            "Paragon Rag",
+            "Staten Island",
+            "Mrs Mcleod's Reel",
+            "The Flower of the Queen",
+            "On the balcony",
+            "Pastime with good company",
+            "Watkin's ale",
+            "Blackerry blossom",
+            "The silver leaves of the poplar tree",
+            "The four corners of my handkerchief",
+            "We three kings of orient are",
+            "Il est ne, le divin enfant",
+            "Freylechs from warsaw",
+            "Russian March",
+            "Glwysen",
+            "La cucaracha",
+            "La cumpasita"
+          ]
+        }
+      ]
+    }
+  ]
+}

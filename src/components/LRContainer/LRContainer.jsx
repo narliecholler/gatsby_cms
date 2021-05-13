@@ -45,7 +45,7 @@ const LRContainer = ({
         <Button id="repBtn" link='/repertoire' text='view repertoire' backgroundColor={theme.color.secondary} textColor={theme.color.primary} />
       </div>
       <div className="LRImage">
-        <GatsbyImage image={LRImage} />
+        <GatsbyImage image={LRImage} alt='content image' />
       </div>
     </Container>
   )

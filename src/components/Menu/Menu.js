@@ -3,6 +3,7 @@ import { MenuWrapper } from './style'
 import { slide as Menu } from 'react-burger-menu'
 import { useMediaQuery } from 'react-responsive'
 import MenuItem from './MenuItem'
+import Logo from '../Logo'
 
 const MenuBar = ({
   items,
@@ -13,7 +14,11 @@ const MenuBar = ({
   const renderMenuView = (query) => {
     if (query) {
       return (
-        <Menu right>
+        <Menu right id="mobileMenu">
+          <Logo
+            text='Boticelli Duet'
+            size='30px'
+          />
           {items && (
             items.map(i => {
               return (
@@ -45,7 +50,7 @@ const MenuBar = ({
 
   return (
     <MenuWrapper id={id}>
-      { isTablet ? renderMenuView(true) : renderMenuView()}
+      {isTablet ? renderMenuView(true) : renderMenuView()}
     </MenuWrapper>
   )
 }

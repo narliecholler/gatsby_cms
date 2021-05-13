@@ -7,6 +7,24 @@ const MenuWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
 
+  #mobileMenu {
+    background-color: ${({ theme }) => theme.color.secondary};
+    nav {
+      text-align: center;
+      div {
+        &:first-child {
+          margin-bottom: 25px;
+        }
+      }
+      a {
+        color: ${({ theme }) => theme.color.primary};
+        font-size: 22px;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
 
   @media only screen and (min-width: 1025px) {
     a {
@@ -14,7 +32,6 @@ const MenuWrapper = styled.div`
     }
   }
 
-  
   @media only screen and (max-width: 1024px) {
     /* Position and sizing of burger button */
     .bm-burger-button {
@@ -56,7 +73,7 @@ const MenuWrapper = styled.div`
 
     /* General sidebar styles */
     .bm-menu {
-      background: #373a47;
+      background: ${({ theme }) => theme.color.secondary};
       padding: 2.5em 1.5em 0;
       font-size: 1.15em;
     }

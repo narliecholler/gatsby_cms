@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import { theme } from '../../theme/theme'
+import Logo from '../Logo'
 import { FooterContainer, FooterInner, FooterBottom, FooterHeading, FooterSection } from './style'
-
 
 const Footer = () => {
   return (
@@ -15,11 +17,18 @@ const Footer = () => {
         <FooterSection>
           <FooterHeading>Our events</FooterHeading>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Repertoire</li>
-            <li>Gallery</li>
-            <li>Book us</li>
+            <li>
+              <Link activeStyle={{ textDecoration: 'underline' }} to='/'>Home</Link>
+            </li>
+            <li>
+              <Link activeStyle={{ textDecoration: 'underline' }} to='/about'>About</Link>
+            </li>
+            <li>
+              <Link activeStyle={{ textDecoration: 'underline' }} to='/repertoire'>Repertoire</Link>
+            </li>
+            <li>
+              <Link activeStyle={{ textDecoration: 'underline' }} to='/contact'>Get in touch</Link>
+            </li>
           </ul>
         </FooterSection>
         <FooterSection>
@@ -32,8 +41,12 @@ const Footer = () => {
         </FooterSection>
       </FooterInner>
       <FooterBottom>
-        logo
-        <p> Website created by Charlie</p>
+        <Logo
+          size='20px'
+          color={theme.color.primary}
+          text='Boticelli Duet'
+        />
+        <p>Website developed by Charlie</p>
       </FooterBottom>
     </FooterContainer>
   )

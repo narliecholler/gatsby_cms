@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
+import '../assets/css/typography.css'
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -27,8 +28,13 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.color.primary};
 
     h1, h2, h3, h4, h5, h6 {
-      font-family: ${({ theme }) => theme.font.primary.family};
+      font-family: ${({ theme }) => theme.font.cursive.family};
+      font-weight: 700;
       color: ${({ theme }) => theme.color.black};
+    }
+
+    .angelica {
+      font-family: ${({ theme }) => theme.font.cursive.family};
     }
 
     p {
@@ -43,8 +49,6 @@ const GlobalStyle = createGlobalStyle`
       width: 80%;
       margin: auto!important;
     }
-
-
 
 
     // mobile styles 

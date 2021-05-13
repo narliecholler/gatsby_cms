@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderContainer from './style'
 import MenuBar from '../Menu'
 import { useStaticQuery, graphql } from 'gatsby'
+import Logo from '../Logo'
 
 const Header = () => {
   const data = useStaticQuery(
@@ -29,7 +30,11 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <div id="logo">logo</div>
+      <Logo
+        text='Boticelli Duet'
+        color='#862041'
+        size='30px'
+      />
       <MenuBar id="menu" items={menuItemsObj} />
     </HeaderContainer>
   )

@@ -25,7 +25,20 @@ const FooterInner = styled.div`
 
 const FooterSection = styled.div`
   width: 25%;
+  color: ${({ theme }) => theme.color.primary};
+  p {
+    color: ${({ theme }) => theme.color.primary};
+  }
 
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: ${({ theme }) => theme.color.primary};
+        font-weight: 400;
+      }
+    }
+  }
   @media only screen and (max-width: 768px) {
     width: 100%;
     padding-bottom: 30px;
@@ -40,15 +53,19 @@ const FooterBottom = styled.div`
   text-align: center;
   border-top: 1px solid #fff;
 
+  div {
+    margin-bottom: 15px;
+  }
+
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
 `
 
 const FooterHeading = styled.h5`
-  font-size: 20px;
+  font-size: 22px;
   padding-bottom: 15px;
-  text-transform: uppercase;
+  color: ${({ theme }) => theme.color.primary};
   @media only screen and (max-width: 768px) {
     padding-bottom: 5px;
   }

@@ -25,7 +25,7 @@ const Person = ({
         <p>{text}</p>
       </TextCol>
       <ImageCol>
-        <GatsbyImage image={image} />
+        <GatsbyImage image={image} alt='person image' />
       </ImageCol>
     </PersonContainer>
   )
