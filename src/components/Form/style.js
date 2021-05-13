@@ -54,7 +54,7 @@ const FormField = styled.div`
 
 `
 
-const FormButton = styled(Button)`
+const FormButton = styled.button`
   width: 80%!important;
   height: 50px;
   color: red;
