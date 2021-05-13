@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.development`,
+  path: `.env`,
 })
 
 // require .env.development or .env.production
