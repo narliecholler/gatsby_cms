@@ -32,7 +32,7 @@ const ContactForm = () => {
   })
 
   return (
-    <Form name='contact' method='POST' netlify-honeypot="bot-field" netlify>
+    <Form name='boticelli-contact' method='POST' netlify-honeypot="bot-field" netlify enctype='application/x-www-form-urlencoded'>
       <div id='nameRow' className="formRow">
         <FormField>
           <label htmlFor="firstName">First Name*</label>
@@ -45,9 +45,11 @@ const ContactForm = () => {
             value={formik.values.firstName}
           >
           </input>
-          {formik.touched.firstName && formik.errors.firstName ? (
-            <Error className="formError">{formik.errors.firstName}</Error>
-          ) : null}
+          {
+            formik.touched.firstName && formik.errors.firstName ? (
+              <Error className="formError">{formik.errors.firstName}</Error>
+            ) : null
+          }
         </FormField>
         <FormField>
           <label htmlFor="lastName">Last Name</label>
@@ -64,7 +66,7 @@ const ContactForm = () => {
             <Error className="formError">{formik.errors.lastName}</Error>
           ) : null}
         </FormField>
-      </div>
+      </div >
       <div className="formRow">
         <FormField>
           <label htmlFor="email">Your Email*</label>
@@ -108,7 +110,7 @@ const ContactForm = () => {
           text='Submit'
         />
       </div>
-    </Form>
+    </Form >
   )
 }
 
