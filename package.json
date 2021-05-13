@@ -35,6 +35,7 @@
     "gatsby-plugin-sharp": "^2.6.38",
     "gatsby-plugin-styled-components": "^3.3.14",
     "gatsby-source-filesystem": "^2.3.32",
+    "gatsby-source-wordpress": "^5.5.0",
     "gatsby-source-wordpress-experimental": "^7.0.0",
     "gatsby-transformer-sharp": "2.5.16",
     "gatsby-wordpress-experimental-inline-images": "^0.0.3",

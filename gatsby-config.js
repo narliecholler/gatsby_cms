@@ -1,10 +1,5 @@
 require("dotenv").config({
-  path: `.env.GATSBY_CONCURRENT_DOWNLOAD`,
-})
-
-// require .env.development or .env.production
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 })
 
 module.exports = {
@@ -18,11 +13,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-wordpress-experimental`,
+      resolve: `gatsby-source-wordpress`,
       options: {
-        url:
-          process.env.WPGRAPHQL_URL ||
-          `http://cms.boticelli-duet.com/graphql`,
+        url: process.env.WPGRAPHQL_URL,
         verbose: true,
         develop: {
           hardCacheMediaFiles: true,
