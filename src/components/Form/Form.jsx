@@ -103,12 +103,9 @@ const ContactForm = () => {
         </FormField>
       </div>
       <div className="formRow">
-        <FormButton
-          type='submit'
-          backgroundColor={theme.color.secondary}
-          color={theme.color.primary}
-          text='Submit'
-        />
+        <button type='submit'>
+          submit
+        </button>
       </div>
     </Form >
   )
