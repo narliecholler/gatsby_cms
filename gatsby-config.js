@@ -8,6 +8,9 @@ require("dotenv").config({
 })
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://www.boticelli-duet.com/`,
+  },
   plugins: [
     `gatsby-plugin-sharp`,
     {
