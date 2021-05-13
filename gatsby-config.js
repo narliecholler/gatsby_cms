@@ -23,9 +23,11 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
+        url: process.env.WPGRAPHQL_URL,
+        protocol: 'https',
+        hostingWPCOM: false,
         useACF: true,
-        url:
-          process.env.WPGRAPHQL_URL
+        verbose: true
       },
     },
     `gatsby-plugin-image`,
