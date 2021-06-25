@@ -1,68 +1,30 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import Wrapper from './style'
 import Heading from '../Heading'
 import ImageBox from '../ImageBox'
 import Button from '../Button'
 import { theme } from '../../theme/theme'
+import { Container, ImageWrapper } from './style'
 
 const HireContainer = ({
-
+  data,
 }) => {
-
-  const data = useStaticQuery(graphql`
-    query HireContainerQuery {
-        allWpPage(filter: { slug: { eq: "home" } }) {
-          edges {
-            node {
-              TheVenues {
-                venueone {
-                  localFile {
-                    childImageSharp {
-                      gatsbyImageData(layout: CONSTRAINED)
-                    }
-                  }
-                }
-                venuetwo {
-                  localFile {
-                    childImageSharp {
-                      gatsbyImageData(layout: CONSTRAINED)
-                    }
-                  }
-                }
-                venuethree {
-                  localFile {
-                    childImageSharp {
-                      gatsbyImageData(layout: CONSTRAINED)
-                    }
-                  }
-                }
-                heading
-                text
-              }
-            }
-          }
-        }
-     }
-   `)
-
-  const imgOne = data.allWpPage.edges[0].node.TheVenues.venueone.localFile.childImageSharp.gatsbyImageData
-  const imgTwo = data.allWpPage.edges[0].node.TheVenues.venuetwo.localFile.childImageSharp.gatsbyImageData
-  const imgThree = data.allWpPage.edges[0].node.TheVenues.venuethree.localFile.childImageSharp.gatsbyImageData
-  // const imgFour = data.allWpPage.edges[0].node.TheVenues.venuefour.localFile.childImageSharp.gatsbyImageData
-  const title = data.allWpPage.edges[0].node.TheVenues.heading
-  const text = data.allWpPage.edges[0].node.TheVenues.text
-
+  const {
+    venueone,
+    venuetwo,
+    venuethree,
+    heading,
+    text,
+  } = data
 
   return (
-    <Wrapper>
-      <Heading align='center' heading='h2' text={title} underlineColor={theme.color.primary} />
+    <Container>
+      <Heading align='center' as='h2' text={heading} underline underlineColor={theme.color.secondary} />
       <p>{text}</p>
-      <div className="venueImgs">
-        <ImageBox image={imgOne} />
-        <ImageBox image={imgTwo} />
-        <ImageBox image={imgThree} />
-      </div>
+      <ImageWrapper>
+        <ImageBox image={venueone} />
+        <ImageBox image={venuetwo} />
+        <ImageBox image={venuethree} />
+      </ImageWrapper>
       <Button
         text='Book your venue'
         link='/contact'
@@ -71,7 +33,7 @@ const HireContainer = ({
         id='hireBtn'
         align='center'
       />
-    </Wrapper>
+    </Container>
   )
 }
 

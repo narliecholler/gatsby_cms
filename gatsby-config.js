@@ -2,11 +2,6 @@ require("dotenv").config({
   path: `.env`,
 })
 
-// require .env.development or .env.production
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.boticelli-duet.com/`,
@@ -14,19 +9,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
       resolve: `gatsby-source-wordpress`,
       options: {
         url: process.env.WPGRAPHQL_URL,
-        protocol: 'https',
-        hostingWPCOM: false,
-        useACF: true,
         verbose: true
       },
     },

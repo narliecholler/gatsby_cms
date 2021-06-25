@@ -2,8 +2,10 @@ import React from 'react'
 import { OuterTable, QuickLinkContainer } from './style'
 
 const MusicTable = ({
-  music,
+  data,
 }) => {
+
+  const { music } = data
 
   return (
     <>

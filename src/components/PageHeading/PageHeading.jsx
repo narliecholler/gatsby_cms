@@ -8,7 +8,7 @@ const PageHeading = ({
 
   return (
     <PageHeader>
-      <Heading heading='h1' text={pageHeading} align='center' />
+      <Heading as='h1' text={pageHeading} align='center' />
     </PageHeader>
   )
 }

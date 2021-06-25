@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-const PersonContainer = styled.div`
+const Container = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@ const PersonContainer = styled.div`
 
 `
 
-const TextCol = styled.div`
+const ContentWrapper = styled.div`
   width: 50%;
 
   @media only screen and (max-width: 414px) {
@@ -34,7 +34,7 @@ const TextCol = styled.div`
   }
 `
 
-const ImageCol = styled.div`
+const ImageWrapper = styled.div`
   width: 50%;
   text-align: center;
 
@@ -44,7 +44,7 @@ const ImageCol = styled.div`
 `
 
 export {
-  PersonContainer,
-  TextCol,
-  ImageCol,
+  Container,
+  ContentWrapper,
+  ImageWrapper,
 }

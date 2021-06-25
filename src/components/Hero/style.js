@@ -15,6 +15,7 @@ const HeroContainer = styled.div`
     #heroImg {
       width: 70%;
     }
+    
     #heroInfo {
       position: absolute;
       width: 40%;

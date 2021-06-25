@@ -1,17 +1,15 @@
 import React from 'react'
-import { GatsbyImage } from 'gatsby-plugin-image'
-import { ImageBoxContainer, OverlayHeading } from './style'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import ImageBoxContainer from './style'
 
 const ImageBox = ({
   image,
-  id,
 }) => {
+  const img = getImage(image.localFile)
 
   return (
     <ImageBoxContainer>
-      <span className="venuOverlay"></span>
-      <OverlayHeading className="boxHeading" text='Weddings' heading='h3' />
-      <GatsbyImage image={image} alt='venue image' />
+      <GatsbyImage image={img} alt='venue' />
     </ImageBoxContainer>
   )
 }

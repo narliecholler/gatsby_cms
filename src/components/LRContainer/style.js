@@ -9,24 +9,6 @@ const Container = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
 
-  .LRContent, .LRImage {
-    width: 50%;
-  }
-
-  .LRContent {
-    p {
-      width: 95%;
-    }
-  }
-
-
-  .LRImage {
-    text-align: right;
-    div {
-      border-radius: 5px;
-    }
-  }
-
   @media only screen and (max-width: 1024px) {
     width: 100%;
   }
@@ -55,4 +37,43 @@ const Container = styled.div`
   }
 `
 
-export default Container
+const ContentWrapper = styled.div`
+  width: 50%;
+  p {
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+    h2 {
+      text-align: center;
+    }
+    p {
+      width: 100%;
+    }
+    button {
+      text-align: center;
+    }
+  }
+`
+
+const ImageWrapper = styled.div`
+  width: 50%;
+
+  text-align: right;
+  div {
+    border-radius: 5px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+`
+
+export {
+  Container,
+  ContentWrapper,
+  ImageWrapper,
+}
