@@ -12,7 +12,7 @@ const HeroBox = ({
 
   return (
     <HeroBoxContainer id='heroInfo'>
-      <Heading align="left" as='h1' text={heading} underlineColor={theme.color.white} />
+      <Heading align="left" as='h1' text={heading} underline underlineColor={theme.color.white} />
       <p>{text}</p>
       <p>{secondText}</p>
     </HeroBoxContainer>

@@ -4,7 +4,8 @@ const QuickLinkContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 100%;
+  max-width: 1024px;
   margin: auto;
   margin-bottom: 50px;
 
@@ -19,7 +20,8 @@ const QuickLinkContainer = styled.div`
 `
 
 const OuterTable = styled.div`
-  width: 60%;
+  width: 100%;
+  max-width: 1024px;
   margin: auto;
   margin-bottom: 150px;
 

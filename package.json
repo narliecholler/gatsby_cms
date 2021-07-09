@@ -1,11 +1,10 @@
 {
-  "name": "using-gatsby-source-wordpress-experimental",
-  "description": "Gatsby example site using gatsby-source-wordpress@next",
+  "name": "boticelli-duet",
+  "description": "Headless CMS and Gatsby frontend for a musical duet",
   "license": "MIT",
   "version": "0.0.1",
   "author": {
-    "name": "Tyler",
-    "email": "tyler@gatsbyjs.com"
+    "name": "Charlie"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -53,6 +52,10 @@
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.1.0",
     "babel-preset-gatsby": "^1.3.0",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
     "formik": "^2.2.6",
     "gatsby-plugin-image": "^1.1.2",
     "identity-obj-proxy": "^3.0.0",

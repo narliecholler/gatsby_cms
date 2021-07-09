@@ -8,7 +8,6 @@ const Container = styled.div`
 
   p {
     width: 60%;
-    padding-bottom: 25px;
     margin: auto;
     text-align: center;
   }
@@ -31,7 +30,6 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
   margin-top: 20px;
 
   @media only screen and (max-width: 768px) {

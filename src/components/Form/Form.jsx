@@ -1,114 +1,102 @@
-import React from 'react'
-import { Form, FormField, Error, FormButton } from './style'
-import { useFormik, Field } from 'formik'
-import * as yup from 'yup'
+import React, { useReducer, useCallback } from 'react'
+import Button from '../Button'
+import { Form, FormField, Error } from './style'
 import { theme } from '../../theme/theme'
 
+
 const ContactForm = () => {
-  const formik = useFormik({
-    initialValues: {
-      firstName: '',
-      lastName: '',
-      email: '',
-      message: ''
+  const formValues = {
+    firstName: {
+      id: 1,
+      label: 'First Name',
+      name: 'firstName',
+      val: '',
+      error: true,
     },
-    validationSchema: yup.object({
-      firstName:
-        yup.string()
-          .max(15, 'Must be 15 characters or less')
-          .required('Required*'),
-      lastName:
-        yup.string()
-          .max(20, 'Must be 20 characters or less'),
-      email:
-        yup.string()
-          .email('Invalid email address')
-          .required('Required*'),
-      message:
-        yup.string()
-          .max(200, 'Must be 200 characters or less')
-          .required('Required*')
-    })
-  })
+    lastName: {
+      id: 2,
+      label: 'Last Name',
+      name: 'lastName',
+      val: '',
+      error: false, // last name not required.
+    },
+    email: {
+      id: 3,
+      label: 'Your Email',
+      name: 'email',
+      val: '',
+      error: true,
+    },
+    message: {
+      id: 4,
+      label: 'Your Message',
+      name: 'message',
+      val: '',
+      error: true,
+    }
+  }
+
+  const formReducer = (prevState, { field, value }) => {
+    return {
+      ...prevState,
+      [field]: {
+        ...prevState[field],
+        val: value,
+      }
+    }
+  }
+
+  const [formState, formDispatch] = useReducer(formReducer, formValues)
+
+  const handleChange = useCallback((e, field) => {
+    const { target: { value } } = e
+    formDispatch({ field, value })
+  }, [])
 
   return (
-    <Form action='/contact/' name='boticelli-contact' method='POST' netlify-honeypot="bot-field" netlify enctype='application/x-www-form-urlencoded'>
-      <input type="hidden" name="form-name" value="boticelli-contact" />
-      <div id='nameRow' className="formRow">
-        <FormField>
-          <label htmlFor="firstName">First Name*</label>
-          <input
-            id="firstName"
-            name="firstName"
-            type="text"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.firstName}
-          >
-          </input>
-          {
-            formik.touched.firstName && formik.errors.firstName ? (
-              <Error className="formError">{formik.errors.firstName}</Error>
-            ) : null
-          }
-        </FormField>
-        <FormField>
-          <label htmlFor="lastName">Last Name</label>
-          <input
-            id="lastName"
-            name="lastName"
-            type="text"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.lastName}
-          >
-          </input>
-          {formik.touched.lastName && formik.errors.lastName ? (
-            <Error className="formError">{formik.errors.lastName}</Error>
-          ) : null}
-        </FormField>
-      </div >
-      <div className="formRow">
-        <FormField>
-          <label htmlFor="email">Your Email*</label>
-          <input
-            id="email"
-            name="email"
-            type="text"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
-          >
-          </input>
-          {formik.touched.email && formik.errors.email ? (
-            <Error className="formError">{formik.errors.email}</Error>
-          ) : null}
-        </FormField>
-      </div>
-      <div className="formRow">
-        <FormField>
-          <label htmlFor="message">Your Message*</label>
-          <textarea
-            id="message"
-            name="message"
-            type="text"
-            rows='10'
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.message}
-          >
-          </textarea>
-          {formik.touched.message && formik.errors.message ? (
-            <Error className="formError">{formik.errors.message}</Error>
-          ) : null}
-        </FormField>
-      </div>
-      <div className="formRow">
-        <button type='submit'>
-          submit
-        </button>
-      </div>
-    </Form >
+    <Form name="contact" netlify>
+      {
+        Object.entries(formState)
+          .map(([field, value]) => {
+            const { label, name, val, error } = value
+
+            return (
+              <FormField key={field}>
+                <label htmlFor={name}>{label}</label>
+                {field === 'message' ? (
+                  <textarea
+                    id={field}
+                    value={val}
+                    name={name}
+                    type="text"
+                    onChange={(e) => handleChange(e, field)}
+                    rows="10"
+                  />
+                ) : (
+                  <input
+                    id={field}
+                    name={name}
+                    value={val}
+                    type="text"
+                    onChange={(e) => handleChange(e, field)}
+                  />
+                )}
+                {error ?? (
+                  <Error className="formError">{`Please enter your ${label}`}</Error>
+                )}
+              </FormField>
+            )
+          })
+      }
+      <Button
+        type='submit'
+        text='Submit'
+        backgroundColor={theme.color.secondary}
+        textColor={theme.color.primary}
+        id='hireBtn'
+        align='center'
+      />
+    </Form>
   )
 }
 
