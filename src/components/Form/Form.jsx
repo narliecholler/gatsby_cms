@@ -53,7 +53,8 @@ const ContactForm = () => {
   }, [])
 
   return (
-    <Form name="contact" netlify>
+    <Form method="POST" action="#" name="contact" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
       {
         Object.entries(formState)
           .map(([field, value]) => {
