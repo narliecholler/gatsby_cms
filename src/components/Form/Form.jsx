@@ -1,7 +1,6 @@
 import React, { useReducer, useCallback } from 'react'
 import Button from '../Button'
-import { Form, FormField, Error } from './style'
-import { theme } from '../../theme/theme'
+import { Form, FormField, Error, FormButton } from './style'
 
 
 const ContactForm = () => {
@@ -88,14 +87,9 @@ const ContactForm = () => {
             )
           })
       }
-      <Button
-        type='submit'
-        text='Submit'
-        backgroundColor={theme.color.secondary}
-        textColor={theme.color.primary}
-        id='hireBtn'
-        align='center'
-      />
+      <FormButton type='submit'>
+        SUBMIT
+      </FormButton>
     </Form>
   )
 }

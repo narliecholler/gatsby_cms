@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { theme } from '../../theme/theme'
 
 const Form = styled.form`
   width: 60%;
@@ -77,9 +78,9 @@ const FormField = styled.div`
 `
 
 const FormButton = styled.button`
-  width: 80%!important;
-  height: 50px;
-  color: red;
+
+  background-color: ${theme.color.secondary};
+  color: ${theme.color.primary};
 `
 
 const Error = styled.div`
